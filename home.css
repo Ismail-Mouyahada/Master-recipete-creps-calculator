@@ -59,6 +59,7 @@ div.ingredeient{
     font-size: 15pt;
     height: 5em;
     box-shadow: white 0 0 6px;
+    flex-flow: column;
 
 }
 
