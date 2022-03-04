@@ -1,0 +1,187 @@
+ /*--------------External ressources---------------*/
+
+ @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+ *{
+ 	font-family: 'Comfortaa';
+ }
+
+ /*--------------Main container---------------*/
+
+body{
+	margin: auto;
+	padding: 5em;
+	background-color: #faebd7;
+}
+
+
+/*--------------Grid containers---------------*/
+
+.container {  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-rows: 0.8fr 1.2fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titre ingredients-panels"
+    "form-container description";
+    justify-content: center;
+}
+
+.ingredients-panels {     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Oeufs farine lait sucre"
+        "banane nutella beurre miel";
+    grid-area: ingredients-panels;
+    background-color: coral;
+    padding: 1em;
+    box-shadow: #00000042 0 0px 16px;
+    border-radius: 1em;
+    justify-items: stretch;
+    align-items: center;
+    align-content: center;
+    height: 21em;
+    justify-content: center;
+}
+div.ingredeient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9b8a8a;
+    background-color: white;
+    margin: 6.2px;
+    border-radius: 0.3em;
+    font-size: 15pt;
+    height: 5em;
+    box-shadow: white 0 0 6px;
+
+}
+
+.Oeufs { grid-area: Oeufs; 
+}
+
+.farine { grid-area: farine; }
+
+.lait { grid-area: lait; }
+
+.sucre { grid-area: sucre; }
+
+.banane { grid-area: banane; }
+
+.nutella { grid-area: nutella; }
+
+.beurre { grid-area: beurre; }
+
+.miel { grid-area: miel; }
+
+.description {  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.3fr 1.7fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titre-recette"
+    "description-recette";
+  grid-area: description;
+  background-color: #fffbfa;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: #00000042 0 0px 16px; 
+  height: 70%;
+  overflow: hidden;
+  transition: 1s ease-out;
+}
+.description:hover{
+  height: 100%;
+  transition: 1s ease-out;
+
+
+}
+
+.titre-recette { grid-area: titre-recette; }
+
+.description-recette { grid-area: description-recette; }
+
+.form-container {  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.9fr 1.1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "."
+    "values"
+    "btn-calculateur";
+  grid-area: form-container;
+  justify-items: center;
+}
+
+.values { grid-area: values; }
+
+.btn-calculateur { grid-area: btn-calculateur; }
+
+.titre { 
+
+  grid-area: titre; 
+    grid-area: titre;
+    display: grid;
+    justify-content: center;
+}
+
+/*-------------------  ---------------------*/
+button{
+	align-items: center;
+  width: 15em;
+	background-color: coral;
+	color: white;
+	padding: 0.5em 1em;
+	border-radius: 0.6em;
+	font-size: 15pt;
+	border: none;
+	box-shadow: #b3a8a8 0 0 24px;
+}
+ input{
+  align-items: center;
+  width: 15em;
+  background-color: coral;
+  color: white;
+  padding: 1em 1em;
+  border-radius: 0.6em;
+  font-size: 12pt;
+  border: none;
+  box-shadow: #b3a8a8 0 0 24px;
+  outline: none;
+}
+input:focus{
+  background-color: white;
+  color: gray;
+  transition: 1s ease;
+}
+h1{
+	text-align: center;
+  text-transform: uppercase;
+  color: #7c7c7c;
+}
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  color: coral;
+}
+.title-img{
+  height:360px;
+}
+::placeholder{
+  color: white;
+}
+::placeholder:focus{
+  color: gray;
+}
+.icons{
+  width: 40px;
+  height: 40px;
+}
