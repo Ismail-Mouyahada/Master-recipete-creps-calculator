@@ -38,7 +38,7 @@ function Combien(invited){
 	let fleurClass , oeufClass ,farineClass, sucreClass, bananeClass, nutellaClass, beurreClass, mielClass; 
 
 	// values calculs
-	fleurClass   = (ingredeients.fleur   * invited).toFixed(3) + units.kilo;
+	fleurClass   = (ingredeients.fleur   * invited).toFixed(3) + units.litre;
 	farineClass  = (ingredeients.farine  * invited).toFixed(3) + units.kilo;
 	sucreClass   = (ingredeients.sucre   * invited).toFixed(3) + units.kilo;
 	nutellaClass = (ingredeients.nutella * invited).toFixed(3) + units.litre;
