@@ -1,4 +1,8 @@
-# Crepes Ingredients Calculator
+# Crepes Ingredients Calculator!
+
+ ![Screenshot_2023-12-27_00-47-11](https://github.com/Ismail-Mouyahada/Master-recipete-creps-calculator/assets/66369128/512b4e62-cba8-424b-9b63-852ec19cc91d)
+
+
 
 This Crepes Ingredients Calculator is a user-friendly web tool that enables you to effortlessly calculate the exact quantities of ingredients required to make a precise number of delicious crepes. Whether you're planning a cozy breakfast or hosting a gathering, this calculator takes the guesswork out of your crepe preparation.
 
